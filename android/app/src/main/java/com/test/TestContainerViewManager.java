@@ -23,8 +23,4 @@ public class TestContainerViewManager extends ViewGroupManager<FrameLayout> {
         return new TestContainerView(reactContext);
     }
 
-    //    @Override
-//    protected RelativeLayout createViewInstance(ThemedReactContext reactContext) {
-//        return new TestContainerView(reactContext);
-//    }
 }
