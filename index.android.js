@@ -15,37 +15,12 @@ import {
   requireNativeComponent,
 } from 'react-native';
 
-var MarketContainerModule = NativeModules.MarketContainerModule;
 var ViewPager = requireNativeComponent('TestContainerView', null);
 var {width, height} = require('Dimensions').get('window');
 
 export default class test extends Component {
-
-  onPress() {
-    MarketContainerModule.openNewActivity();
-  }
-
-  // render() {
-  //   return <ViewPager style={{ width: width, height: height }} />
-  // }
-
   render() {
-    return (
-      <View style={styles.container}>
-        <TouchableHighlight onPress={this.onPress.bind(this)}>
-          <Text style={styles.welcome}>
-            Welcome to React Native!
-        </Text>
-        </TouchableHighlight>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
+    return <ViewPager style={{ width: width, height: height }} />
   }
 }
 
