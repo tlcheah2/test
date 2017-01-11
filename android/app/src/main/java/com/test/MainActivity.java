@@ -12,18 +12,8 @@ public class MainActivity extends ReactActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        mReactRootView = new ReactRootView(this);
-//        mReactRootView.setBackgroundColor(Color.RED);
 
-//        mReactRootView.startReactApplication(getReactInstanceManager(), "test", null);
-
-//        setContentView(mReactRootView);
     }
-
-
-//    public void changeActivity(){
-//        mReactRootView.add
-//    }
 
     /**
      * Returns the name of the main component registered from JavaScript.
